@@ -16,10 +16,6 @@ pipeline {
                 }
             }
         }
-        stage('Deliver2') {
-            steps {
-                sh './jenkins/scripts/deliver.sh'
-            }
-        }
+        
     }
 }
