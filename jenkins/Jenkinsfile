@@ -16,9 +16,11 @@ pipeline {
                 }
             }
         }
-        stage('Deliver2') {
+        stage('Deliver') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
+                dir("simple-java-maven-app"){
+                    sh './jenkins/scripts/deliver.sh'
+                }
             }
         }
     }
